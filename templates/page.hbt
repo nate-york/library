@@ -1,0 +1,23 @@
+{{> header }}
+
+<main>
+    <article>
+        <p>
+            Page
+        </p>
+        <div>
+            {{> breadcrumbs}}
+        </div>
+        <div class="column column--centered column--center-content">
+            <h1>{{ title }}</h1>
+            <p>{{ description }}</p>
+        </div>
+
+        <div class="column column--centered">
+            {{{ contents }}}
+        </div>
+
+    </article>
+</main>
+
+{{> footer }}

@@ -1,0 +1,25 @@
+{{> header }}
+
+<main>
+    <article>
+        <p>
+            PAGE SECTION TEMPLATE
+        </p>
+        <div>
+            {{> breadcrumbs}}
+        </div>
+        <div class="column column--centered column--center-content">
+            <h1>{{ title }}</h1>
+            <p>{{{ contents }}}</p>
+        </div>
+        <ul>
+            {{#each collections.landing}}
+                <li>
+                    <a href="/{{this.path}}">{{this.title}}</a>
+                </li>
+            {{/each}}
+        </ul>
+    </article>
+</main>
+
+{{> footer }}
