@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <html lang="en">
     <head>
-        <title>Concepts</title>
+        <title>{{title}}</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -30,29 +30,3 @@
         <script src="http://qa.subzero.com//Scripts/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-
-<main>
-    <article>
-        <p>
-            Category Page
-        </p>
-        <div>
-            BREADCRUMBS TEMPLATE
-        </div>
-        <div class="column column--centered column--center-content">
-            <h1>Concepts</h1>
-            <p><p>Concepts text</p>
-</p>
-        </div>
-        <div class="column column--centered column--center-content">
-            <ul class="grid-container">
-            </ul>
-        </div>
-    </article>
-</main>
-
-        <footer>
-            footer
-        </footer>
-    </body>
-</html>

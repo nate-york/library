@@ -1,0 +1,32 @@
+<!-- MAIN NAVIGATION -->
+<nav id="menuContainer-reveal" class="deepNav posMenuAtLeftEdge" role="navigation" style="height: 1059px;">
+    <ul class="deepNav__list">
+        <div class="nav-header">
+            <div class="nav-row__group clearfix nav-row__group--header">
+                <a href="http://www.subzero-wolf.com/pattern-library/index.aspx" class="nav-header__text-link">
+                    <div class="icon icon-home-big"></div>
+                </a>
+            </div>
+
+            <div class="nav-row__group nav-row__group--header">
+                <a href="#" class="nav-header__menu-close js-menu-reset">&lt; Menu</a>
+            </div>
+        </div>
+
+        {{#each collections.libraries}}
+            <li>
+                <a class="showHideIcon" href="">+</a>
+                <a href="http://www.subzero-wolf.com/pattern-library/getting-started.aspx" class="mp-menu__lead-link">{{this.title}}</a>
+                <ul class="mp-menu__list">
+                    {{#each collections.pages}}
+                        <li>
+                            <div class="fauxShowHideIcon" href="">&nbsp;</div>
+                            <a href="{{this.path}}" class="mp-menu__lead-link">{{this.title}}</a>
+                        </li>
+                    {{/each}}
+
+                </ul>
+            </li>
+        {{/each}}
+    </ul>
+</nav>

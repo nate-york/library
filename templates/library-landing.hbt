@@ -25,9 +25,9 @@
                                     </div>
                                     <div class="grid-block__copy ">
                                         <h3>{{this.title}}</h3>
-                                        <p>
+                                        {{!-- <p>
                                             Path: {{this.path}}
-                                        </p>
+                                        </p> --}}
                                     </div>
 
                                 </div>

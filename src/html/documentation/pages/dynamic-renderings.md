@@ -1,8 +1,8 @@
 ---
 title: Dynamic Renderings
-template: page.hbt
+layout: page.hbt
 description: This is the overview of Dynamic Renderings
-
+category: concepts
 ---
 ## Overview
 

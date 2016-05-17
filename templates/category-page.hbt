@@ -1,41 +1,36 @@
 {{> header }}
 
-<main>
-    <article>
-        <p>
-            Category Page
-        </p>
-        <div>
-            {{> breadcrumbs}}
-        </div>
-        <div class="column column--centered column--center-content">
-            <h1>{{ title }}</h1>
-            <p>{{{ contents }}}</p>
-        </div>
-        <div class="column column--centered column--center-content">
-            <ul class="grid-container">
-                {{#each collections.pages}}
-                    <li class="grid-container__element">
-                        <a class="grid-block__link-block" href="/{{this.path}}">
-                            <div class="grid-block">
-                                <div class="grid-block__content add-all-border-block">
 
-                                    <div class="grid-block__copy ">
-                                        <h3>{{this.title}}</h3>
-                                        <p>
-                                            Path: {{this.path}}
-                                        </p>
-                                    </div>
+    <div>
+        {{> breadcrumbs}}
+    </div>
+    <div class="column column--centered column--center-content">
+        <h1>{{ title }}</h1>
+        <p>{{{ contents }}}</p>
+    </div>
+    <div class="column column--centered column--center-content">
+        <ul class="grid-container">
+            {{#each collections.pages}}
+                <li class="grid-container__element">
+                    <a class="grid-block__link-block" href="/{{this.path}}">
+                        <div class="grid-block">
+                            <div class="grid-block__content add-all-border-block">
 
+                                <div class="grid-block__copy ">
+                                    <h3>{{this.title}}</h3>
+                                    {{!-- <p>
+                                        Path: {{this.path}}
+                                    </p> --}}
                                 </div>
-                            </div>
-                        </a>
 
-                    </li>
-                {{/each}}
-            </ul>
-        </div>
-    </article>
-</main>
+                            </div>
+                        </div>
+                    </a>
+
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+
 
 {{> footer }}

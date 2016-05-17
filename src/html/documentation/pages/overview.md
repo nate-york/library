@@ -1,7 +1,8 @@
 ---
 title: Overview
 description: Getting Started Overview
-template: page.hbt
+layout: page.hbt
+category: getting started
 ---
 
 ## Overview Page Content

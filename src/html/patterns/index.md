@@ -1,7 +1,7 @@
 ---
 title: Pattern Library
 description: Design Patterns
-template: library-landing.hbt
+layout: library-landing.hbt
 priority: 0.9
 date: 2016-04-19
 publish: draft

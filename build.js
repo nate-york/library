@@ -4,7 +4,7 @@
 
 var metalsmith  = require('metalsmith'),
     markdown    = require('metalsmith-markdown'),
-    templates     = require('metalsmith-templates'),
+    layouts     = require('metalsmith-layouts'),
     //handlebars  = require('handlebars'),
     collections = require('metalsmith-collections'),
     permalinks  = require('metalsmith-permalinks'),
@@ -23,11 +23,11 @@ var metalsmith  = require('metalsmith'),
             },
 
             "categories": {
-                pattern: "documentation/*/index.md",
-                sortBy: 'title'
+                pattern: "documentation/categories/*",
+                sortBy: 'priority'
             },
             "pages": {
-                pattern: "/documentation/*/pages/*",
+                pattern: "documentation/pages/*",
                 sortBy: 'title'
             }
         }))
@@ -37,20 +37,23 @@ var metalsmith  = require('metalsmith'),
         .use(permalinks({
             //pattern: ':title',
 
-            // linksets: [{
-            //
-            //     match: { collection: 'pages' },
-            //     pattern: 'documentation//:title'
-            // }],
+            linksets: [{
+                match: { collection: 'pages' },
+                pattern: 'documentation/:category/:title'
+            }, {
+                match: { collection: 'categories'},
+                pattern: 'documentation/:collection'
+            }],
 
             //relative: false,
         }))
 
-        .use(templates({
+        .use(layouts({
             engine: "handlebars",
             directory: "./templates",
             partials: {
                 "header" : "partials/header",
+                "main-nav" : "partials/main-nav",
                 "footer" : "partials/footer",
                 "breadcrumbs" : "partials/breadcrumbs",
                 "code-example" : "partials/code-example"

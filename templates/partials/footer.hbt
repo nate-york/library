@@ -1,5 +1,50 @@
-        <footer>
-            footer
-        </footer>
-    </body>
+</main>
+<!-- END MAIN CONTENT -->
+
+<div class="sticky-footer clearfix">
+    <div class="sticky-footer__content-wrapper">
+        <ul class="icon-list brand-switch">
+            <li class="icon-list__item brand__sz"><a href="#" class="icon-list__link"><div class="icon sz-crystal--solid"></div></a></li>
+            <li class="icon-list__item brand__wolf"><a href="#" class="icon-list__link"><div class="icon wolf-flame--solid"></div></a></li>
+            <li class="icon-list__item brand__neutral active"><a href="#" class="icon-list__link"><div class="icon icon-neutral"><span>N</span></div></a></li>
+        </ul>
+        <div class="sticky-footer__left-content">
+            <p></p>
+        </div>
+    </div>
+</div>
+</div><!-- End content reveal -->
+</div><!-- End container reveal -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://www.subzero-wolf.com/pattern-library/Scripts/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="http://www.subzero-wolf.com/Scripts/Common/slick.min.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Framework/plugins.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Common/picturefill.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Common/sticky-header.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Common/transition.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Common/mlpushmenu-animate-2.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Common/search-slideout.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Shared/responsive-slider/responsive-carousel.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Common/modal.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Common/breadcrumbs.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Common/jquery.placeholder.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Common/jquery.customSelect.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Common/forms.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Common/accordion.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Framework/main.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Framework/jquery.hoverIntent.minified.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Framework/prism.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Framework/code-escape.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/DiscoverProducts/discover-products.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Shared/masonry.pkgd.min.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Shared/imagesloaded.pkgd.min.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Common/tab.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Common/fancy-tabs-v2.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Common/smartresize.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Common/frameset-group-initializer.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Common/frameset-initializer.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Common/vert-scroller.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Common/global-footer-formatting.js"></script>
+<script src="http://www.subzero-wolf.com/pattern-library/Scripts/Common/global-menu.js"></script>
+</body>
 </html>

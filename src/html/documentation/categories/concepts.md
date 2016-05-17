@@ -1,10 +1,11 @@
 ---
 title: Concepts
 description: Sitecore Concepts
-template: category-page.hbt
-priority: 0.9
+layout: category-page.hbt
+priority: 2
 date: 2016-04-19
 modified: 2016-05-15
+category: concepts
 ---
 
 Concepts text

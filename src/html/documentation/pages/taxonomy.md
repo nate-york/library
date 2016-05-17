@@ -1,5 +1,6 @@
 ---
 title: File Taxonomy
-template: page.hbt
+layout: page.hbt
+category: concepts
 ---
 File Taxonomy
