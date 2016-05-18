@@ -53,7 +53,7 @@ gulp.task('metalsmith', function(callback) {
 //--------------------------------------------------------------------------------------------------------------------------//
 
 // set gulp to run the 'watch' task by default
-gulp.task('default', ['browserSync', 'watch']);
+gulp.task('default', ['metalsmith', 'browserSync', 'watch']);
 
 
 // Watched folders and their assigned tasks
