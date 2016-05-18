@@ -1,7 +1,7 @@
 {
   "name": "reference-library",
   "version": "0.2.7",
-  "description": "A reference library intended for statically generating a complex reference library using Metalsmith, and Handlebars, and Gulp",
+  "description": "A framework intended for statically generating a complex reference library using Metalsmith, and Handlebars, and Gulp",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

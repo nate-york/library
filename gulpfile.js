@@ -32,15 +32,12 @@ function setupMetalsmith(callback) {
   });
 }
 
-gulp.task('browserSync', function() {
+gulp.task('browserSync', ['metalsmith'], function() {
   browserSync.init({
     server: {
       baseDir: './build',
-      //online: true,
-    },
-    files: [
-      "**/*.html"
-    ]
+      online: true,
+    }
   })
 })
 
