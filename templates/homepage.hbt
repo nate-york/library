@@ -1,10 +1,6 @@
 {{> header }}
 
-<main>
-    <article>
-        <p>
-            HOMEPAGE TEMPLATE
-        </p>
+
         <div>
             {{> breadcrumbs}}
         </div>
@@ -21,12 +17,13 @@
                                 <div class="grid-block__content add-all-border-block">
 
                                     <div class="grid-block__carousel-image">
-                                        <img src="http://fpoimg.com/150x150?bg_color=FFFFFF" />
+                                        <img src="http://fpoimg.com/150x150?bg_color=FFFFFF&text=ICON" />
                                     </div>
+
                                     <div class="grid-block__copy ">
                                         <h3>{{this.title}}</h3>
                                         <p>
-                                            Path: {{path}}
+                                            Path: {{this.path}}
                                         </p>
                                     </div>
 
@@ -38,7 +35,5 @@
                 {{/each}}
             </ul>
         </div>
-    </article>
-</main>
 
 {{> footer }}

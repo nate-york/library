@@ -1,5 +1,5 @@
 ---
-title: Pattern Library
+title: Patterns
 description: Design Patterns
 layout: library-landing.hbt
 priority: 0.9
