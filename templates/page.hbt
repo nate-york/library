@@ -1,23 +1,23 @@
 {{> header }}
 
-<main>
-    <article>
-        <p>
-            Page
-        </p>
-        <div>
-            {{> breadcrumbs}}
-        </div>
-        <div class="column column--centered column--center-content">
-            <h1>{{ title }}</h1>
-            <p>{{ description }}</p>
+    <div>
+        {{> breadcrumbs}}
+    </div>
+    <div class="column column--centered column--center-content">
+        <h1>{{ title }}</h1>
+        <p>{{ description }}</p>
+    </div>
+
+    <div class="column column--centered">
+        <div class="content-block">
+            <div class="content-block__two-thirds">
+                {{{ contents }}}
+            </div>
+            <div class="content-block__one-third">
+                {{>pagenav }}
+            </div>
         </div>
 
-        <div class="column column--centered">
-            {{{ contents }}}
-        </div>
-
-    </article>
-</main>
+    </div>
 
 {{> footer }}

@@ -6,7 +6,9 @@
         </div>
         <div class="column column--centered column--center-content">
             <h1>{{ title }}</h1>
-            <p>{{{ contents }}}</p>
+            {{#if contents }}
+                <p>{{{ contents }}}</p>
+            {{/if}}
         </div>
         <div class="column column--centered column--center-content">
             <ul class="grid-container">
@@ -17,14 +19,11 @@
                                 <div class="grid-block__content add-all-border-block">
 
                                     <div class="grid-block__carousel-image">
-                                        <img src="http://fpoimg.com/150x150?bg_color=FFFFFF&text=ICON" />
+                                        <img src="http://fpoimg.com/150x150?bg_color=FFFFFF&text={{listing-icon}}" />
                                     </div>
 
                                     <div class="grid-block__copy ">
                                         <h3>{{this.title}}</h3>
-                                        <p>
-                                            Path: {{this.path}}
-                                        </p>
                                     </div>
 
                                 </div>

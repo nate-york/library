@@ -22,11 +22,11 @@ module.exports = {
               "sortBy": "title"
           },
           "categories": {
-              "pattern": "documentation2/*/index.md",
+              "pattern": "*/*/index.md",
               "sortBy": "priority"
           },
           "pages": {
-              "pattern": "documentation2/*/*",
+              "pattern": "*/*/*/*",
               "sortBy": "title"
           }
       },
@@ -37,7 +37,11 @@ module.exports = {
           "tables": true
       },
       "metalsmith-permalinks": {
-
+          "pattern": ":collection/:title",
+          "linksets": [{
+              "match": "pages",
+              "pattern": ":collection/:category/:title"
+          }]
       },
       "metalsmith-layouts": {
         "engine": "handlebars",
