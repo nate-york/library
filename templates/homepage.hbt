@@ -13,22 +13,22 @@
         <div class="column column--centered column--center-content">
             <ul class="grid-container">
                 {{#each collections.libraries}}
-                    <li class="grid-container__element">
-                        <a class="grid-block__link-block" href="{{this.path}}">
-                            <div class="grid-block">
+                    <li class="grid-container__element grid-container__element--no-img-rules">
+                        <div class="grid-block">
+                            <a class="grid-block__link-block" href="{{this.path}}">
                                 <div class="grid-block__content add-all-border-block">
-
-                                    <div class="grid-block__carousel-image">
-                                        <img src="http://fpoimg.com/150x150?bg_color=FFFFFF&text={{listing-icon}}" />
-                                    </div>
-
-                                    <div class="grid-block__copy ">
+                                    <div class="grid-block__contenty ">
+                                        {{#if listing-icon}}
+                                            <picture>
+                                                <source srcset="/assets/images/listing-icons/{{listing-icon}}.svg" type="image/svg+xml">
+                                                <img srcset="/assets/images/listing-icons/{{listing-icon}}.png" alt="{{title}}">
+                                            </picture>
+                                        {{/if}}
                                         <h3>{{this.title}}</h3>
                                     </div>
-
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
 
                     </li>
                 {{/each}}

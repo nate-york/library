@@ -1,5 +1,5 @@
 <ul class="padded-list">
-    {{#each collections.categories}}
-        <li class="padded-list__item"><a href="{{path}}">{{title}}</a></li>
+    {{#each collections.pages}}
+        <li class="padded-list__item"><a href="/{{path}}">{{title}}</a></li>
     {{/each}}
 </ul>

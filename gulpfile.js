@@ -3,6 +3,7 @@ var path = require('path'),
     handlebars = require('handlebars'),
     Metalsmith = require('metalsmith'),
     browserSync = require('browser-sync').create(),
+    //headings = require('metalsmith-headings'),
     site = require('./site');
 
 // Metalsmith
@@ -10,7 +11,6 @@ function setupMetalsmith(callback) {
   var ms = new Metalsmith(process.cwd());
   var msconfig = site.metalsmith || {};
   var msplugins = msconfig.plugins || {};
-
   ms.source(msconfig.config.contentRoot);
   ms.destination(msconfig.config.destRoot);
   ms.metadata(msconfig.metadata);
@@ -26,7 +26,6 @@ function setupMetalsmith(callback) {
       console.log(err);
       return callback(err);
     }
-
     callback();
     browserSync.reload();
   });

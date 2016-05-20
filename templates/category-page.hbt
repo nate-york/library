@@ -4,7 +4,13 @@
     <div>
         {{> breadcrumbs}}
     </div>
-    <div class="column column--centered column--center-content">
+    <div class="column column--centered column--center-content column--no-top-padding">
+        {{#if listing-icon}}
+            <picture>
+                <source srcset="/assets/images/listing-icons/{{listing-icon}}.svg" type="image/svg+xml">
+                <img srcset="/assets/images/listing-icons/{{listing-icon}}.png" alt="{{title}}">
+            </picture>
+        {{/if}}
         <h1>{{ title }}</h1>
         <p>{{{ contents }}}</p>
     </div>
@@ -12,8 +18,8 @@
         <ul class="grid-container">
                 {{#each collections.pages}}
                 <li class="grid-container__element">
-                    <a class="grid-block__link-block" href="/{{this.path}}">
-                        <div class="grid-block">
+                    <div class="grid-block">
+                        <a class="grid-block__link-block" href="/{{this.path}}">
                             <div class="grid-block__content add-all-border-block">
 
                                 <div class="grid-block__copy ">
@@ -21,9 +27,8 @@
                                 </div>
 
                             </div>
-                        </div>
-                    </a>
-
+                        </a>
+                    </div>
                 </li>
                 {{/each}}
         </ul>

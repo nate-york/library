@@ -2,7 +2,8 @@
 title: Documentation
 description: Documentation for International Sitecore Content Editors
 layout: library-landing.hbt
-listing-icon: icon-documentation
+library: documentation
+listing-icon: icon-lightbulb
 ---
 
 Documentation library landing page

@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head runat="server">
-        <title>Sub-Zero and Wolf Pattern Library</title>
+        <title>{{title}} || Sub-Zero and Wolf Library</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="http://www.subzero-wolf.com/Content/css/main.css" rel="stylesheet" />
@@ -28,7 +28,7 @@
 
     </head>
 
-    <body class="{{title}}">
+    <body class="{{library}}">
         <div id="container-reveal">
 
             {{> main-nav }}

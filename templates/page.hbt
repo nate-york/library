@@ -8,8 +8,8 @@
         <p>{{ description }}</p>
     </div>
 
-    <div class="column column--centered">
-        <div class="content-block">
+    <div class="column column--small-centered">
+        <div class="content-block content-block--wide">
             <div class="content-block__two-thirds">
                 {{{ contents }}}
             </div>
